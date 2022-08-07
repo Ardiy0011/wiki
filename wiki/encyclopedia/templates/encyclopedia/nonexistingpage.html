@@ -1,0 +1,8 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block body %}
+<br>
+<div class="alert alert-primary" role="alert" >
+<h7>The Page "{{entrypageTitle}}" does not exist, Wanna create a new page of your own?<p> Click <a href="{% url 'newEntrypage' %}">here</a> </h7>
+</div>
+{% endblock %}

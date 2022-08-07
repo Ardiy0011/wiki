@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         
+<style>
+
+
+
+code {
+    white-space: pre;
+}
+
+
+body{
+    width:98%;
+    background-color:#eee;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+h7 {
+    font-size:20px;
+}
+
+h8 {
+    font-size:30px;
+
+}
+
+h9 {
+    font-size:30px;
+
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #a6dfcc;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+nav{
+    width:102%;
+    height:30px;
+    background-color:#eee;
+    
+}
+
+button{
+background-color:#a6dfcc;
+
+
+}
+
+.navbar a {
+    position:relative;
+    float: left;
+    display: flex;
+    color: #c9c4c4;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.6s;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand{
+    position:relative;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+ .navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link:hover{
+     color: #fff !important;
+ }
+ 
+
+.navbar ul {
+    margin: 2px 0 0 0;
+    list-style: none;
+    transition: 0.6s;
+    
+}
+
+.navbar a:hover {
+    background-color: rgb(92, 85, 85);
+    opacity: 0.8;
+    border-radius: 30px;
+    color: #000;
+    transition: 0.1s;
+    
+}
+
+
+.about img{
+	height: auto;
+	width: auto;
+}
+
+</style>
+    </head>
+    <body>
+      
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="">ROOBWOY</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="navbar-brand" href="">LATEST ARTICLES</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navbar-brand" href="">RIGHT BACK</a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-nav">
+            
+                    <li class="nav-item">
+                      <a class="navbar-brand" href="">Sign In</a>
+                    </li>
+            
+                    <li class="nav-item">
+                      <a class="navbar-brand" href="">Sign Up</a>
+                    </li>
+                    
+                  </ul>
+            
+                </div>
+            </div>   
+              </nav> 
+      
+        <div class="row">
+            <div class="sidebar col-lg-2 col-md-3">
+            
+                <h2><svg width="1.0em" height="1.0em" viewBox="0 0 16 16" class="bi bi-grid-3x3-gap-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                  </svg>Wiki</h2>
+                <form action="/usersearch" method="GET">
+                {% csrf_token %}
+                    <input class="search" type="text" name="q" placeholder="Library">
+                </form>
+                <div>
+    <a href="/Home">Home</a>
+                </div>
+                <div>
+    <a href="/newEntrypage">Create New Page</a>
+                </div>
+                <div>
+                    
+    <a href="/randompage">Random Page</a>
+
+                </div>
+                
+            </div>
+
+ <div class="main col-lg-10 col-md-9">
+                
+    
+{% block body %}
+
+{% endblock %}
+</div>
+    </body>
+    
+</html>

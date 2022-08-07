@@ -1,0 +1,29 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    New Entry
+{% endblock %}   
+
+{% block body %}
+
+{% if existing %}
+
+
+<div class="alert alert-info" role="alert">
+or else kindly change the name below
+</div>
+{% endif %}
+
+<br>
+<h8>INPUT NEW ENTRY HERE!</h8>
+<div  class="form-group ">
+           <form action="{% url 'newEntrypage' %}" method="post">
+           {% csrf_token %}
+           {{ form.as_p }}
+           <input type = "submit" name="submit">
+           
+           </form><br>
+           <a href="/Home"><button>Cancel</button></a>
+</div>
+{% endblock %}
+          

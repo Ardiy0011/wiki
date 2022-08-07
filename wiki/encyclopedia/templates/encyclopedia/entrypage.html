@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+
+{{entrypageTitle}}
+
+<!-- dislays href link list item's title found in the block body -->
+{% endblock %}
+               
+{% block body %}
+<br>
+    <a href="{{entrypageTitle}}/editpage"><button>Edit</button></a> <!-- generates specific entries-->
+    {{entrypage|safe}}
+{% endblock %}
+             

@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+  Encyclopedia
+{% endblock %}  
+ 
+{% block body %}
+<br>
+        {% if usersearch %}
+<h9>No results for word "{{searchinput}}"</h9>
+        {% else %}
+<!-- if user inputs a search, display the text in h9 plus the search input link else render indexpage -->      
+
+
+<h1>All Pages</h1>
+{% endif %}
+
+    <ul>
+        {% for entrypage in entries %}
+            <a href= "/wiki/{{entrypage}}"><li><button>{{entrypage}}</button></li></a><br>
+            <!-- generates entrypage list items -->
+        {% endfor %}
+        
+    </ul>
+
+
+{% endblock %}
